@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lunar.Avalonia1
 Avalonia demo programme to be used to demonstrate Avalonia UI development, including integration with Syncfusion services.
 
@@ -93,3 +94,6 @@ Ship metrics directly from your application code over HTTP for storage in your G
 1. [WSL: Run Linux GUI Apps](https://www.youtube.com/watch?v=kC3eWRPzeWw);
 1. [Visualize real-time mobile app data with the Embrace data source plugin for Grafana](https://grafana.com/blog/2023/02/13/visualize-real-time-mobile-app-data-with-the-embrace-data-source-plugin-for-grafana/);
 1. [Error message related to libICE.so.6 makes code to exit?](https://stackoverflow.com/questions/75281328/error-message-related-to-libice-so-6-makes-code-to-exit).
+=======
+# BudgetPlaner
+>>>>>>> 6ccda6546faaa422a0a708ba7c8c17452ad0a072
