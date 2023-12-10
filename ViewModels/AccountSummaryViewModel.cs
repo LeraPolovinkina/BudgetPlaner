@@ -35,7 +35,7 @@ public class AccountSummaryViewModel: ObservableObject
             await SearchReportAsync();
         });
     }
-
+    
     public async Task OnSearchCommandAsync()
     {
         await SearchReportAsync();
@@ -52,8 +52,7 @@ public class AccountSummaryViewModel: ObservableObject
             Expense.Expenses
             .Where(e => e.TransactedAt >= SearchStartDate && e.TransactedAt <= SearchEndDate)
             .OrderByDescending(e => e.TransactedAt));
-
-        // Send telemetry
+        
         await Telemetry.SendTelemetryAsync("report", new Dictionary<string, string>
             {
                 { "report", "account_summary" },
@@ -66,29 +65,23 @@ public class AccountSummaryViewModel: ObservableObject
 
     private async Task ExportReportToExcelAsync()
     {
-        string fileName = $"ExpenseSummary_{DateTime.Now:yyyy-MM-dd-HHmmss}.xlsx";
+        string fileName = $"ExpenseSummary_.xlsx";
 
         using (var excelEngine = new ExcelEngine())
         {
-            //Instantiate the Excel application object
             IApplication application = excelEngine.Excel;
-
-            //Assigns default application version
+            
             application.DefaultVersion = ExcelVersion.Xlsx;
-
-            // Create a new workbook
+            
             IWorkbook workbook = excelEngine.Excel.Workbooks.Create(1);
-
-            // Access first worksheet from the workbook
+            
             IWorksheet worksheet = workbook.Worksheets[0];
-
-            // Set the header row
+            
             worksheet.Range["A1"].Text = "Item";
             worksheet.Range["B1"].Text = "Remark";
             worksheet.Range["C1"].Text = "Amount (SGD)";
             worksheet.Range["D1"].Text = "Transaction Date";
-
-            // Add the data rows
+            
             var row = 2;
             foreach (var expense in ExpenseSummary)
             {
@@ -99,18 +92,15 @@ public class AccountSummaryViewModel: ObservableObject
 
                 row++;
             }
-
-            // Check if file directory exists
+            
             if (!Directory.Exists("output"))
             {
                 Directory.CreateDirectory("output");
             }
-
-            // Save the workbook            
+           
             FileStream stream = new($"output/{fileName}", FileMode.Create, FileAccess.ReadWrite);
             workbook.SaveAs(stream);
-
-            // Dispose stream
+            
             stream.Dispose();
         }
 
@@ -120,7 +110,7 @@ public class AccountSummaryViewModel: ObservableObject
 
         await messageBox.ShowAsync();
 
-        // Send telemetry
+
         await Telemetry.SendTelemetryAsync("report", new Dictionary<string, string>
             {
                 { "report", "account_summary" },

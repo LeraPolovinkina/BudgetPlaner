@@ -1,5 +1,7 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using Syncfusion.XlsIO;
 
 namespace Lunar.Avalonia1.Models;
 
@@ -27,7 +29,7 @@ public class Expense
     static class ExpenseGenerator
     {
         private static readonly string[] Categories = { "Food", "Transportation", "Entertainment", "Shopping", "Housing", "Communication", "Education", "Medical", "Insurance", "Investment", "Others" };
-        private static readonly string Currency = "SGD";
+        private static readonly string Currency = "c";
         private static readonly DateTime StartDate = new DateTime(2023, 1, 1);
         private static readonly DateTime EndDate = new DateTime(2023, 10, 7);
 

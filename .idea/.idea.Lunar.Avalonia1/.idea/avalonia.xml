@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="App.axaml" value="Lunar.Avalonia1.csproj" />
+        <entry key="MainWindow.axaml" value="Lunar.Avalonia1.csproj" />
+        <entry key="UserControls/DataGridForAccountSummary.axaml" value="Lunar.Avalonia1.csproj" />
+        <entry key="UserControls/MainView.axaml" value="Lunar.Avalonia1.csproj" />
+        <entry key="UserControls/Overview.axaml" value="Lunar.Avalonia1.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

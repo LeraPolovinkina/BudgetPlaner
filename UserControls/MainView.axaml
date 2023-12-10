@@ -25,13 +25,13 @@
                     <TextBlock
                         VerticalAlignment="Center"
                         Classes="H6"
-                        Text="Lunar Fox"
+                        Text="Budget Planner"
                         Theme="{DynamicResource TitleTextBlock}" />
                     <TextBlock
                         Margin="8,0"
                         VerticalAlignment="Center"
                         Classes="Secondary"
-                        Text="Budget Planner" />
+                        Text="by Polovinkina Lera" />
                 </StackPanel>
                 <ToggleSwitch
                     Grid.Column="1"

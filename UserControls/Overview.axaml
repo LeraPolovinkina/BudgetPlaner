@@ -43,7 +43,7 @@
             <StackPanel Orientation="Vertical" Margin="6">
                 <TextBlock
                     Margin="0 2"
-                    Text="Welcome, Goh Chun Lin"/>
+                    Text="Welcome, Valeria"/>
             </StackPanel>
             <StackPanel Margin="6" Orientation="Horizontal">
                 <StackPanel>
@@ -68,7 +68,7 @@
                                 VerticalAlignment="Top"
                                 ColumnDefinitions="Auto, *"
                                 RowDefinitions="*">
-                                <TextBlock Grid.Row="0" Grid.Column="0" Classes="H6" Margin="2">SGD</TextBlock>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Classes="H6" Margin="2">c</TextBlock>
                                 <TextBlock Grid.Row="0" Grid.Column="1" Margin="2">1,244</TextBlock>
                             </Grid>
                         </StackPanel>
@@ -92,7 +92,7 @@
                                 VerticalAlignment="Top"
                                 ColumnDefinitions="Auto, *"
                                 RowDefinitions="*">
-                                <TextBlock Grid.Row="0" Grid.Column="0" Classes="H6" Margin="2">SGD</TextBlock>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Classes="H6" Margin="2">c</TextBlock>
                                 <TextBlock Grid.Row="0" Grid.Column="1" Margin="2">744</TextBlock>
                             </Grid>
                         </StackPanel>
@@ -146,9 +146,9 @@
                                 ShowProgressText="True"
                                 Value="16.4" />
                         </Grid>
-                        <StackPanel Margin="0 12 0 0" HorizontalAlignment="Center" >
-                            <Button Classes="Primary" Theme="{DynamicResource BorderlessButton}">View More...</Button>
-                        </StackPanel>
+                        <!-- <StackPanel Margin="0 12 0 0" HorizontalAlignment="Center" > -->
+                        <!--     <Button Classes="Primary" Theme="{DynamicResource BorderlessButton}">View More...</Button> -->
+                        <!-- </StackPanel> -->
                     </StackPanel>
                 </StackPanel>                
             </StackPanel>

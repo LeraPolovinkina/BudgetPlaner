@@ -22,4 +22,9 @@
     <PackageReference Include="Semi.Avalonia.DataGrid" Version="11.0.1" />
     <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="23.1.39" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="README.md" />
+  </ItemGroup>
 </Project>

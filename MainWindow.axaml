@@ -6,6 +6,6 @@
         xmlns:pages="using:Lunar.Avalonia1.UserControls"
         mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="800"
         x:Class="Lunar.Avalonia1.MainWindow"
-        Title="Lunar.Avalonia1">
+        Title="Budget Planner">
     <pages:MainView />
 </Window>
